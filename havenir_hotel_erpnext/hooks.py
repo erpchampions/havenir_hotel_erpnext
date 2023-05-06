@@ -131,6 +131,9 @@ fixtures = [{
 # 	"frappe.desk.doctype.event.event.get_events": "havenir_hotel_erpnext.event.get_events"
 # }
 #
+whitelisted_methods = {
+	"havenir_hotel_erpnext.havenir_hotel_erpnext.doctype.hotel_check_in.hotel_check_in.get_room_price": "GET"
+}
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
