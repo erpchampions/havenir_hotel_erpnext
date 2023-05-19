@@ -81,7 +81,7 @@ class HotelCheckOut(Document):
         
         
         
-
+    @frappe.whitelist()
     def get_check_in_details(self):
         room_doc = frappe.get_doc('Rooms', self.room)
         check_in_doc = frappe.get_doc('Hotel Check In', room_doc.check_in_id)
