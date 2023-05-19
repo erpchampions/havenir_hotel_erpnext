@@ -92,7 +92,7 @@ class HotelCheckOut(Document):
             return 1
         else:
             return frappe.utils.data.date_diff(self.check_out, self.check_in)
-
+    @frappe.whitelist()
     def get_items(self):
         # Getting Hotel Check In Details
         hotel_check_in = frappe.get_doc('Hotel Check In', self.check_in_id)
