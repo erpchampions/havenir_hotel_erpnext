@@ -87,6 +87,7 @@ class HotelCheckOut(Document):
         check_in_doc = frappe.get_doc('Hotel Check In', room_doc.check_in_id)
         return [check_in_doc.name, check_in_doc.cnic, check_in_doc.guest_name, check_in_doc.check_in, check_in_doc.contact_no, check_in_doc.guest_id]
 
+    @frappe.whitelist()
     def calculate_stay_days(self):
         if frappe.utils.data.date_diff(self.check_out, self.check_in) == 0:
             return 1
