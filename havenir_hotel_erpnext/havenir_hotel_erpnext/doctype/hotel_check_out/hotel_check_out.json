@@ -212,7 +212,7 @@
    "fieldtype": "Data",
    "label": "CNIC",
    "read_only": 1,
-   "reqd": 1
+   "reqd": 0
   },
   {
    "fieldname": "customer",
