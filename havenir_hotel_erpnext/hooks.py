@@ -25,6 +25,8 @@ fixtures = [{
   ]
 }]
 
+custom = ["custom_fields"]
+
 # include js, css files in header of desk.html
 # app_include_css = "/assets/havenir_hotel_erpnext/css/havenir_hotel_erpnext.css"
 # app_include_js = "/assets/havenir_hotel_erpnext/js/havenir_hotel_erpnext.js"
