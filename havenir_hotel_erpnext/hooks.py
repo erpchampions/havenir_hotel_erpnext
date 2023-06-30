@@ -13,6 +13,7 @@ app_license = "MIT"
 
 # Includes in <head>
 # ------------------
+custom = ["custom_fields"]
 
 fixtures = [{
   'dt' : 'Custom Field', 'filters':[
@@ -25,7 +26,7 @@ fixtures = [{
   ]
 }]
 
-custom = ["custom_fields"]
+
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/havenir_hotel_erpnext/css/havenir_hotel_erpnext.css"
