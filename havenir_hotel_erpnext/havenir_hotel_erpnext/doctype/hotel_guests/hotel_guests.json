@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "naming_series:",
  "creation": "2020-01-29 14:39:12.726257",
  "doctype": "DocType",
@@ -8,13 +9,13 @@
   "naming_series",
   "guest_name",
   "cnic",
+  "contact_no",
   "column_break_3",
   "passport_no",
   "date_of_birth",
   "details_section",
   "id_card_front_attachment",
   "id_card_front_photo",
-  "contact_no",
   "column_break_8",
   "id_card_back_attachment",
   "id_card_back_photo",
@@ -33,7 +34,6 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "CNIC",
-   "reqd": 0,
    "unique": 1
   },
   {
@@ -71,14 +71,12 @@
   },
   {
    "allow_in_quick_entry": 1,
-   "description": "Format: 92XXXXXXXXXX\nExample: 923217654321",
    "fieldname": "contact_no",
-   "fieldtype": "Data",
+   "fieldtype": "Phone",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Contact No",
-   "reqd": 1,
-   "unique": 1
+   "reqd": 1
   },
   {
    "fieldname": "column_break_8",
@@ -137,11 +135,13 @@
    "label": "Details"
   }
  ],
- "modified": "2020-07-29 12:02:04.025076",
+ "links": [],
+ "modified": "2023-07-26 22:10:19.718239",
  "modified_by": "Administrator",
  "module": "Havenir Hotel Erpnext",
  "name": "Hotel Guests",
  "name_case": "Title Case",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -184,6 +184,7 @@
  "search_fields": "guest_name,cnic,passport_no,contact_no",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "title_field": "guest_name",
  "track_changes": 1
 }
